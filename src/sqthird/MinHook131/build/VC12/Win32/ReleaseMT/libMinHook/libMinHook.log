@@ -1,0 +1,5 @@
+﻿  buffer.c
+  hde32.c
+  hook.c
+  trampoline.c
+  libMinHook.vcxproj -> E:\dev\work\cloudfee\lib\ReleaseMT\libMinHookMT.x86.lib

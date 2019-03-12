@@ -1,0 +1,5 @@
+﻿  buffer.c
+  hde64.c
+  hook.c
+  trampoline.c
+  libMinHook.vcxproj -> E:\dev\work\cloudfee\sqcommon\src\sqthird\MinHook131\build\VC12\lib\Release\libMinHook.x64.lib

@@ -1,0 +1,16 @@
+LIBRARY sqlogd
+
+EXPORTS
+InitLogger @1
+UninitLogger @2
+AddLogFile @3
+OutPutLogStr @4
+CheckLogPath @5
+LogHeaderBuild @6
+OutPutLogEx @7
+AddLogModule @8
+GetCurLogFile @9
+CheckLogDate @10
+DebugLogStr @11
+DebugLogEx @12
+

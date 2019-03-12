@@ -1,0 +1,6 @@
+﻿  buffer.c
+  hde32.c
+  hook.c
+  trampoline.c
+  Generating Code...
+  libMinHook.vcxproj -> E:\dev\work\cloudfee\sqcommon\src\sqthird\MinHook131\build\VC12\lib\Debug\libMinHookd.x86.lib

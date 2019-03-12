@@ -1,0 +1,5 @@
+﻿  buffer.c
+  hde32.c
+  hook.c
+  trampoline.c
+  libMinHook.vcxproj -> D:\dev\work\library\MinHook_131_src\build\VC11\lib\Release\libMinHook.x86.lib
