@@ -1,0 +1,2 @@
+#define VER_REVISION 1,0,0,806
+#define VER_TODAY "1.0.18.0907"

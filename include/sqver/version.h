@@ -1,0 +1,16 @@
+#ifndef _COMMON_VERSION_H_
+#define _COMMON_VERSION_H_
+
+#include "version_svn.h"
+
+#define COMMON_TODAYS VER_TODAY
+#define COMMON_REVISION VER_REVISION
+#define COMMON_COMPANYNAME "SNCH"
+#define COMMON_LEGALCOPYRIGHT "Copyright (C) 2017 四川盛趣时代网络科技有限公司"
+#define COMMON_FILEVERSION VER_REVISION
+#define COMMON_PRODUCTVERSION VER_TODAY
+#define COMMON_FILE_DESCRIPTION "基础平台"
+#define COMMON_PRODUCT_NAME "基础平台"
+
+
+#endif
