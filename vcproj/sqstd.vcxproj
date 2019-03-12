@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="v141_lib_mtd|Win32">
+      <Configuration>v141_lib_mtd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mtd|x64">
+      <Configuration>v141_lib_mtd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mdd|Win32">
+      <Configuration>v141_lib_mdd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mdd|x64">
+      <Configuration>v141_lib_mdd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mt|Win32">
+      <Configuration>v141_lib_mt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mt|x64">
+      <Configuration>v141_lib_mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_md|Win32">
+      <Configuration>v141_lib_md</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_md|x64">
+      <Configuration>v141_lib_md</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\sqstd\PieceWrite.h" />
+    <ClInclude Include="..\include\sqstd\singleton.h" />
+    <ClInclude Include="..\include\sqstd\sqassert.h" />
+    <ClInclude Include="..\include\sqstd\sqconvert.h" />
+    <ClInclude Include="..\include\sqstd\sqecpt.h" />
+    <ClInclude Include="..\include\sqstd\sqfmterror.h" />
+    <ClInclude Include="..\include\sqstd\sqformat.h" />
+    <ClInclude Include="..\include\sqstd\sqinc.h" />
+    <ClInclude Include="..\include\sqstd\sqindex.h" />
+    <ClInclude Include="..\include\sqstd\sqini.h" />
+    <ClInclude Include="..\include\sqstd\sqjsonconf.h" />
+    <ClInclude Include="..\include\sqstd\sqpool.h" />
+    <ClInclude Include="..\include\sqstd\sqraii.h" />
+    <ClInclude Include="..\include\sqstd\sqrwlock.h" />
+    <ClInclude Include="..\include\sqstd\sqsafemap.h" />
+    <ClInclude Include="..\include\sqstd\sqsafeset.h" />
+    <ClInclude Include="..\include\sqstd\sqservicectrl.h" />
+    <ClInclude Include="..\include\sqstd\sqshrmem.h" />
+    <ClInclude Include="..\include\sqstd\sqshrmemhelper.h" />
+    <ClInclude Include="..\include\sqstd\sqshrmemhelperex.h" />
+    <ClInclude Include="..\include\sqstd\sqsingleton.h" />
+    <ClInclude Include="..\include\sqstd\sqstringhelper.h" />
+    <ClInclude Include="..\include\sqstd\sqsysfun.h" />
+    <ClInclude Include="..\include\sqstd\sqtaskpool.h" />
+    <ClInclude Include="..\include\sqstd\sqtaskqueue.h" />
+    <ClInclude Include="..\include\sqstd\sqtasksyncthread.h" />
+    <ClInclude Include="..\include\sqstd\sqtaskthread.h" />
+    <ClInclude Include="..\include\sqstd\sqtime.h" />
+    <ClInclude Include="..\include\sqstd\sqtimerqueue.h" />
+    <ClInclude Include="..\include\sqstd\sqtimertaskthread.h" />
+    <ClInclude Include="..\include\sqstd\sqtimerthread.h" />
+    <ClInclude Include="..\include\sqstd\sqtypes.h" />
+    <ClInclude Include="..\include\sqstd\squeue.h" />
+    <ClInclude Include="..\include\sqstd\sqvecbuffhelper.h" />
+    <ClInclude Include="..\include\sqstd\sqzip.h" />
+    <ClInclude Include="..\include\sqstd\winsechelper.h" />
+    <ClInclude Include="..\src\sqstd\cmlog.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\sqstd\dummy.cc" />
+    <ClCompile Include="..\src\sqstd\jsoncpp\json_reader.cpp" />
+    <ClCompile Include="..\src\sqstd\jsoncpp\json_value.cpp" />
+    <ClCompile Include="..\src\sqstd\jsoncpp\json_writer.cpp" />
+    <ClCompile Include="..\src\sqstd\PieceWrite.cpp" />
+    <ClCompile Include="..\src\sqstd\sqconvert.cpp" />
+    <ClCompile Include="..\src\sqstd\sqfilerw.cpp" />
+    <ClCompile Include="..\src\sqstd\sqformat.cpp" />
+    <ClCompile Include="..\src\sqstd\sqini.cpp" />
+    <ClCompile Include="..\src\sqstd\sqjsonconf.cpp" />
+    <ClCompile Include="..\src\sqstd\sqrwlock.cpp" />
+    <ClCompile Include="..\src\sqstd\sqstringhelper.cpp" />
+    <ClCompile Include="..\src\sqstd\sqtaskpool.cpp" />
+    <ClCompile Include="..\src\sqstd\sqtimerqueue.cpp" />
+    <ClCompile Include="..\src\sqstd\sqzip.cpp" />
+    <ClCompile Include="..\src\sqstd\sysfun.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{81109685-6302-4604-9464-575480E4A52A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sqcommon</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>sqstd</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\..\..\sdk;..\..\..\..\sdk\boost_1_57_0;..\common\inc\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\src\lib;..\..\..\..\sdk\boost_1_57_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_mdd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <IncludePath>..\..\..\..\sdk;..\..\..\..\sdk\boost_1_57_0;..\common\inc\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\src\lib;..\..\..\..\sdk\boost_1_57_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_mtd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'">
+    <IncludePath>..\..\..\..\sdk;..\..\..\..\sdk\boost_1_57_0;..\common\inc\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\src\lib;..\..\..\..\sdk\boost_1_57_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)64d</TargetName>
+    <OutDir>$(ProjectDir)..\output\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'">
+    <IncludePath>..\..\..\..\sdk;..\..\..\..\sdk\boost_1_57_0;..\common\inc\;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\src\lib;..\..\..\..\sdk\boost_1_57_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)64d</TargetName>
+    <OutDir>$(ProjectDir)..\output\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <IncludePath>..\..\..\..\sdk;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_md</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <IncludePath>..\..\..\..\sdk;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_mt</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'">
+    <IncludePath>..\..\..\..\sdk;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\output\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'">
+    <IncludePath>..\..\..\..\sdk;$(IncludePath)</IncludePath>
+    <OutDir>$(ProjectDir)..\output\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4018;4101;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;psapi.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4018;4101;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;psapi.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\x64\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;libcurld.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\x64\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;libcurld.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4018;4101;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;psapi.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4018;4101;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;psapi.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;SQLITE_HAS_CODEC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4244;4267;4334</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\x64\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;libcurl.lib;psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;SQLITE_HAS_CODEC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4244;4267;4334</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\x64\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>Userenv.lib;libcurl.lib;psapi.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\lib\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

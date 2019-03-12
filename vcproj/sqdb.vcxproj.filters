@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{838b72ce-b814-4dea-bad0-b71cf8587800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{84ca5cfc-6714-49bd-9a2a-542cfcc29362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mysql">
+      <UniqueIdentifier>{accf6978-8eda-4447-b830-5ddc0f000b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sqlite">
+      <UniqueIdentifier>{b2269453-73a3-40e0-b330-66a4a7c7f529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{0cbee5cb-a7a7-449e-8d74-e6dd5ae6dc52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{a9a4fea2-07b8-45bb-a7a7-c045e5f8df35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\sqdb\sqdb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\sqdbmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\sqdbuti.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqdb\sqdblog.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqdb\mysql\sqmysql.h">
+      <Filter>Source Files\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqdb\mysql\sqmysqlex.h">
+      <Filter>Source Files\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqdb\sqlite\sqlitestmt.h">
+      <Filter>Source Files\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\sqdberr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\base\sqdbinter.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqdb\sqlite\sqsqlite.h">
+      <Filter>Source Files\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\sqdbex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\base\sqdbdataset.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\base\sqjsontosql.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\base\sqdbencryptor.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqdb\base\sqpbtosql.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\sqdb\sqdb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\sqdbmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\sqdbuti.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\mysql\sqmysql.cpp">
+      <Filter>Source Files\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\mysql\sqmysqlex.cpp">
+      <Filter>Source Files\mysql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\sqlite\sqlitestmt.cpp">
+      <Filter>Source Files\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\sqlite\sqsqlite.cpp">
+      <Filter>Source Files\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\sqdbinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\sqdbex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqdb\base\sqjsontosql.cpp">
+      <Filter>Source Files\base</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="v141_lib_md|Win32">
+      <Configuration>v141_lib_md</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_md|x64">
+      <Configuration>v141_lib_md</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mtd|Win32">
+      <Configuration>v141_lib_mtd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mtd|x64">
+      <Configuration>v141_lib_mtd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mdd|Win32">
+      <Configuration>v141_lib_mdd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mt|Win32">
+      <Configuration>v141_lib_mt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mdd|x64">
+      <Configuration>v141_lib_mdd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mt|x64">
+      <Configuration>v141_lib_mt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\sqthird\raknet\Base64Encoder.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\BitStream.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\CCRakNetSlidingWindow.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\CCRakNetUDT.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\CheckSum.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\CloudClient.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\CloudCommon.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\CloudServer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\CommandParserInterface.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\ConnectionGraph2.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\ConsoleServer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DataCompressor.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DirectoryDeltaTransfer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\dlmalloc.c" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DR_SHA1.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DS_BytePool.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DS_ByteQueue.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DS_HuffmanEncodingTree.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DS_Table.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\DynDNS.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\EmailSender.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\EpochTimeToString.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\FileList.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\FileListTransfer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\FileOperations.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\FormatString.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\FullyConnectedMesh2.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\GetTime.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\gettimeofday.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\GridSectorizer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\HTTPConnection.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\HTTPConnection2.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\IncrementalReadInterface.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\Itoa.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\LinuxStrings.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\LocklessTypes.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\LogCommandParser.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\MessageFilter.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\NatPunchthroughClient.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\NatPunchthroughServer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\NatTypeDetectionClient.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\NatTypeDetectionCommon.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\NatTypeDetectionServer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\NetworkIDManager.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\NetworkIDObject.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\PacketConsoleLogger.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\PacketFileLogger.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\PacketizedTCP.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\PacketLogger.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\PacketOutputWindowLogger.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\PluginInterface2.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\PS4Includes.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\Rackspace.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakMemoryOverride.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\raknet.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetCommandParser.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RaknetExtend.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_360_720.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_Berkley.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_Berkley_NativeClient.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_NativeClient.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_PS3_PS4.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_PS4.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_Vita.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_WindowsStore8.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_Windows_Linux.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetSocket2_Windows_Linux_360.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetStatistics.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetTransport2.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakNetTypes.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakPeer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakSleep.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakString.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakThread.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RakWString.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\Rand.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RandSync.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\ReadyEvent.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RelayPlugin.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\ReliabilityLayer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\ReplicaManager3.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\Router2.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\RPC4Plugin.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\SecureHandshake.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\SendToThread.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\SignaledEvent.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\SimpleMutex.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\SocketLayer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\StatisticsHistory.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\stdafx.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\StringCompressor.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\StringTable.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\SuperFastHash.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\TableSerializer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\TCPInterface.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\TeamBalancer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\TeamManager.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\TelnetTransport.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\ThreadsafePacketLogger.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\TwoWayAuthentication.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\UDPForwarder.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\UDPProxyClient.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\UDPProxyCoordinator.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\UDPProxyServer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\VariableDeltaSerializer.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\VariableListDeltaTracker.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\VariadicSQLParser.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\VitaIncludes.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\WSAStartupSingleton.cpp" />
+    <ClCompile Include="..\..\src\sqthird\raknet\_FindFirst.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\sqthird\raknet\stdafx.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0765F1AD-0FBB-46E2-BDD2-391F2FB5E3AF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>raknet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>tdnetud</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>tdnetud</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>tdnetu</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>tdnetu</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_RAKNET_DLL;_RAKNET_SUPPORT_FileListTransfer;_RAKNET_SUPPORT_FileOperations;_CRT_SECURE_NO_WARNINGS;RAKNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include\sqthird\;$(ProjectDir)..\..\include\;$(ProjectDir)..\..\include\sqthird\google\;$(ProjectDir)..\..\include\sqthird\Raknet</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).dll ..\..\bin\$(TargetName).dll /Y
+copy $(OutDir)$(TargetName).lib ..\..\lib\$(TargetName).lib /Y
+copy $(OutDir)$(TargetName).pdb ..\..\bin\$(TargetName).pdb /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_RAKNET_DLL;_RAKNET_SUPPORT_FileListTransfer;_RAKNET_SUPPORT_FileOperations;_CRT_SECURE_NO_WARNINGS;RAKNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include\sqthird\;$(ProjectDir)..\..\include\;$(ProjectDir)..\..\include\sqthird\google\;$(ProjectDir)..\..\include\sqthird\Raknet</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).dll ..\..\bin\$(TargetName).dll /Y
+copy $(OutDir)$(TargetName).lib ..\..\lib\$(TargetName).lib /Y
+copy $(OutDir)$(TargetName).pdb ..\..\bin\$(TargetName).pdb /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;RAKNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;RAKNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_RAKNET_SUPPORT_FileListTransfer;_RAKNET_SUPPORT_FileOperations;_CRT_SECURE_NO_WARNINGS;RAKNET_EXPORTS;_RAKNET_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include\sqthird\;$(ProjectDir)..\..\include\;$(ProjectDir)..\..\include\sqthird\google\;$(ProjectDir)..\..\include\sqthird\Raknet</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).dll ..\..\bin\$(TargetName).dll /Y
+copy $(OutDir)$(TargetName).lib ..\..\lib\$(TargetName).lib /Y
+copy $(OutDir)$(TargetName).pdb ..\..\bin\$(TargetName).pdb /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_RAKNET_SUPPORT_FileListTransfer;_RAKNET_SUPPORT_FileOperations;_CRT_SECURE_NO_WARNINGS;RAKNET_EXPORTS;_RAKNET_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include\sqthird\;$(ProjectDir)..\..\include\;$(ProjectDir)..\..\include\sqthird\google\;$(ProjectDir)..\..\include\sqthird\Raknet</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).dll ..\..\bin\$(TargetName).dll /Y
+copy $(OutDir)$(TargetName).lib ..\..\lib\$(TargetName).lib /Y
+copy $(OutDir)$(TargetName).pdb ..\..\bin\$(TargetName).pdb /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;RAKNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;RAKNET_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

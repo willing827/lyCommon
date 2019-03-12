@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7df7ee9a-b005-4d0e-9b23-cdd8c912653c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{51c17304-b7c7-4c11-b6c6-8abf7932b88e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\printer">
+      <UniqueIdentifier>{209b0cb0-d6fa-4ece-b664-10f41eb68f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\printer">
+      <UniqueIdentifier>{b349f634-6459-498a-b80d-3ea6de28dd01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\win">
+      <UniqueIdentifier>{4b0d59ef-6851-44a9-ba90-8c190dd5b9c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\thread">
+      <UniqueIdentifier>{3c521016-6acb-40e1-a100-3ff2abef94ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\audio">
+      <UniqueIdentifier>{6463dc32-920d-4c24-9c8d-9859d79df027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\audio">
+      <UniqueIdentifier>{c824c173-dc84-43a4-a037-8df750dba84a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thread">
+      <UniqueIdentifier>{3bfb96ae-66e2-411b-aaa1-7660bbc11260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\win">
+      <UniqueIdentifier>{3e5d1d8c-945e-494e-a002-cdae9076d1a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\sqprinter\gridprinter.h">
+      <Filter>Source Files\printer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqprinter\labelprinter.h">
+      <Filter>Source Files\printer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqprinter\Print.h">
+      <Filter>Source Files\printer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqprinter\ReceiptPrinter.h">
+      <Filter>Source Files\printer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\audio\sqvoiceplayer.h">
+      <Filter>Header Files\audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\thread\sqevent.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\thread\sqmutex.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\thread\sqsignal.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqfilesignature.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqfilevercheck.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqhardwarecode.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqos.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqpath.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqtools.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqwindowmsg.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqwindows.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\printer\printbase.h">
+      <Filter>Header Files\printer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\printer\printhelper.h">
+      <Filter>Header Files\printer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\thread\sqcs.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\thread\sqlock.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\thread\sqwinthread.h">
+      <Filter>Header Files\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\sqwin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqwinnet.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqwinsock.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqservice.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqwinftp.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqreg.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqwin\win\sqfirewall.h">
+      <Filter>Header Files\win</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\sqprinter\GridPrinter.cpp">
+      <Filter>Source Files\printer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqprinter\Print.cpp">
+      <Filter>Source Files\printer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqprinter\PrintHelper.cpp">
+      <Filter>Source Files\printer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqprinter\ReceiptPrinter.cpp">
+      <Filter>Source Files\printer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\audio\sqvoiceplayer.cpp">
+      <Filter>Source Files\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqfilesignature.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqfilevercheck.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqhardwarecode.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqtools.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqwindowmsg.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqwindows.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\thread\sqevent.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\thread\sqmutex.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\thread\sqsignal.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\thread\sqcs.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\thread\sqwinthread.cpp">
+      <Filter>Source Files\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqos.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqpath.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqwinnet.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqwinsock.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqservice.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqwinftp.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqreg.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqfirewall.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqpeinfo.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqwin\win\sqprocess.cpp">
+      <Filter>Source Files\win</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

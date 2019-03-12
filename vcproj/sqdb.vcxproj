@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="v141_lib_mtd|Win32">
+      <Configuration>v141_lib_mtd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mdd|Win32">
+      <Configuration>v141_lib_mdd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mt|Win32">
+      <Configuration>v141_lib_mt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_md|Win32">
+      <Configuration>v141_lib_md</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\sqdb\base\sqdbdataset.h" />
+    <ClInclude Include="..\include\sqdb\base\sqdbencryptor.h" />
+    <ClInclude Include="..\include\sqdb\base\sqdbinter.h" />
+    <ClInclude Include="..\include\sqdb\base\sqjsontosql.h" />
+    <ClInclude Include="..\include\sqdb\base\sqpbtosql.h" />
+    <ClInclude Include="..\include\sqdb\sqdb.h" />
+    <ClInclude Include="..\include\sqdb\sqdberr.h" />
+    <ClInclude Include="..\include\sqdb\sqdbex.h" />
+    <ClInclude Include="..\include\sqdb\sqdbmanager.h" />
+    <ClInclude Include="..\include\sqdb\sqdbuti.h" />
+    <ClInclude Include="..\src\sqdb\mysql\sqmysql.h" />
+    <ClInclude Include="..\src\sqdb\mysql\sqmysqlex.h" />
+    <ClInclude Include="..\src\sqdb\sqdblog.h" />
+    <ClInclude Include="..\src\sqdb\sqlite\sqlitestmt.h" />
+    <ClInclude Include="..\src\sqdb\sqlite\sqsqlite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\sqdb\base\sqjsontosql.cpp" />
+    <ClCompile Include="..\src\sqdb\mysql\sqmysql.cpp" />
+    <ClCompile Include="..\src\sqdb\mysql\sqmysqlex.cpp" />
+    <ClCompile Include="..\src\sqdb\sqdb.cpp" />
+    <ClCompile Include="..\src\sqdb\sqdbex.cpp" />
+    <ClCompile Include="..\src\sqdb\sqdbinter.cpp" />
+    <ClCompile Include="..\src\sqdb\sqdbmanager.cpp" />
+    <ClCompile Include="..\src\sqdb\sqdbuti.cpp" />
+    <ClCompile Include="..\src\sqdb\sqlite\sqlitestmt.cpp" />
+    <ClCompile Include="..\src\sqdb\sqlite\sqsqlite.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7353768E-294A-4E93-8A13-9D5B6463713F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sqcenterdata</RootNamespace>
+    <ProjectName>sqdb</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_mdd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_mtd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_md</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_mt</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CURL_STATICLIB;_SCL_SECURE_NO_WARNINGS;SQLITE_HAS_CODEC;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>libmysql.lib;sqlite3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CURL_STATICLIB;_SCL_SECURE_NO_WARNINGS;SQLITE_HAS_CODEC;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>libmysql.lib;sqlite3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;CURL_STATICLIB;SQLITE_HAS_CODEC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>libmysql.lib;sqlite3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;CURL_STATICLIB;SQLITE_HAS_CODEC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>libmysql.lib;sqlite3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

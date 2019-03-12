@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="v141_lib_mdd|Win32">
+      <Configuration>v141_lib_mdd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_md|Win32">
+      <Configuration>v141_lib_md</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mtd|Win32">
+      <Configuration>v141_lib_mtd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mt|Win32">
+      <Configuration>v141_lib_mt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD3A25C0-04B6-3330-93BD-F154C88453B9}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>cefclient</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">$(ProjectName)_mdd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">$(ProjectDir)..\..\output\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">$(ProjectDir)..\..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">$(ProjectName)_md</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">$(ProjectName)_mt</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">$(ProjectName)_mtd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\src\sqthird\cef\;$(ProjectDir)..\..\include\sqthird\cef\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;WRAPPING_CEF_SHARED;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;WRAPPING_CEF_SHARED;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>opengl32.lib</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).lib ..\..\lib\cef\$(TargetName).lib /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\src\sqthird\cef\;$(ProjectDir)..\..\include\sqthird\cef\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996;4091;</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;_NDEBUG;WRAPPING_CEF_SHARED;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;WRAPPING_CEF_SHARED;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>opengl32.lib</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).lib ..\..\lib\cef\$(TargetName).lib /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\src\sqthird\cef\;$(ProjectDir)..\..\include\sqthird\cef\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996;4091;</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;_NDEBUG;WRAPPING_CEF_SHARED;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;WRAPPING_CEF_SHARED;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>opengl32.lib</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).lib ..\..\lib\cef\$(TargetName).lib /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\src\sqthird\cef\;$(ProjectDir)..\..\include\sqthird\cef\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4244;4481;4512;4701;4702;4996;4091;</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;WRAPPING_CEF_SHARED;CMAKE_INTDIR="Release";HAS_DEV_TOOLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;_WIN32;UNICODE;_UNICODE;WINVER=0x0601;_WIN32_WINNT=0x601;NOMINMAX;WIN32_LEAN_AND_MEAN;_HAS_EXCEPTIONS=0;CEF_USE_ATL;_NDEBUG;WRAPPING_CEF_SHARED;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\v6dj\3.0\src\client\cef3.3071;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>opengl32.lib</AdditionalDependencies>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName).lib ..\..\lib\cef\$(TargetName).lib /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\v6dj\3.0\src\client\cef3.3071\ZERO_CHECK.vcxproj">
+      <Project>{71B2466E-2D89-34B1-843B-19F194914361}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\browser_window.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\browser_window_manager.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\browser_window_osr_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\browser_window_std_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\bytes_write_handler.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\client_app_browser.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\client_app_delegates_browser.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\client_browser.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\client_handler.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\client_handler_osr.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\client_handler_std.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\dialog_handler.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\geometry_util.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_context.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_context_impl.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_context_impl_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop_external_pump.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop_external_pump_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop_multithreaded_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop_std.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\osr_accessibility_helper.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\osr_accessibility_node.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\osr_accessibility_node_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\osr_dragdrop_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\osr_ime_handler_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\osr_renderer.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\osr_window_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\browser\util_win.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\cefclient.cpp" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\common\client_app.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\common\client_app_delegates_common.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\common\client_app_other.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\common\client_switches.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\renderer\client_app_delegates_renderer.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\renderer\client_app_renderer.cc" />
+    <ClCompile Include="..\..\src\sqthird\cef\cefclient\renderer\client_renderer.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\sqthird\cef\cefclient\cefclient.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\browser_window_osr_win.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\browser_window_std_win.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\bytes_write_handler.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\client_app_browser.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\client_browser.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\client_handler_osr.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\client_handler_std.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\geometry_util.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop_external_pump.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop_multithreaded_win.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\main_message_loop_std.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\osr_accessibility_helper.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\osr_accessibility_node.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\osr_dragdrop_events.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\osr_dragdrop_win.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\osr_ime_handler_win.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\osr_window_win.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\browser\resource.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\common\client_switches.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\renderer\client_app_renderer.h" />
+    <ClInclude Include="..\..\src\sqthird\cef\cefclient\renderer\client_renderer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

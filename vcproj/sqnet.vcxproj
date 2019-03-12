@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="v141_lib_mtd|Win32">
+      <Configuration>v141_lib_mtd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mdd|Win32">
+      <Configuration>v141_lib_mdd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_mt|Win32">
+      <Configuration>v141_lib_mt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="v141_lib_md|Win32">
+      <Configuration>v141_lib_md</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B5124064-8952-4F93-AE7C-3C8B20F5054A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>sqnetex</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_mdd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_mtd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_md</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <OutDir>$(ProjectDir)..\output\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\output\obj\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_mt</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mdd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINSOCK_DEPRECATED_NO_WARNINGS;_DEBUG;_LIB;CURL_STATICLIB;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tdnetd.lib;tdnetud.lib;libcurl.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mtd|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINSOCK_DEPRECATED_NO_WARNINGS;_DEBUG;_LIB;CURL_STATICLIB;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tdnetd.lib;tdnetud.lib;libcurl.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_md|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINSOCK_DEPRECATED_NO_WARNINGS;NDEBUG;_LIB;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>YBNetSupport_md.lib;sqsafemodel_md.lib;yelogger.lib;sqcommon_md.lib;libprotobuf_md.lib;sqprotoobj_md.lib;sqnetex_md.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\common\lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>tdnet.lib;tdnetu.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='v141_lib_mt|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINSOCK_DEPRECATED_NO_WARNINGS;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\include\sqthird\;$(ProjectDir)..\include\;$(ProjectDir)..\include\sqthird\google\</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4005;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(OutDir)$(TargetName)$(TargetExt) ..\lib\ /Y</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>tdnet.lib;tdnetu.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\sqnet\sqdispatcher.h" />
+    <ClInclude Include="..\include\sqnet\HttpClient.h" />
+    <ClInclude Include="..\include\sqnet\safetudp.h" />
+    <ClInclude Include="..\include\sqnet\sqcenterparser.h" />
+    <ClInclude Include="..\include\sqnet\sqcrypthelper.h" />
+    <ClInclude Include="..\include\sqnet\sqicmp.h" />
+    <ClInclude Include="..\include\sqnet\sqpacket.h" />
+    <ClInclude Include="..\include\sqnet\sqparser.h" />
+    <ClInclude Include="..\include\sqnet\sqnet2.h" />
+    <ClInclude Include="..\include\sqnet\sqnetapi.h" />
+    <ClInclude Include="..\include\sqnet\sqnetclient.h" />
+    <ClInclude Include="..\include\sqnet\sqnetclientbot.h" />
+    <ClInclude Include="..\include\sqnet\sqnetclientex.h" />
+    <ClInclude Include="..\include\sqnet\sqnetclienttt.h" />
+    <ClInclude Include="..\include\sqnet\sqnethelper.h" />
+    <ClInclude Include="..\include\sqnet\sqnethelper2.h" />
+    <ClInclude Include="..\include\sqnet\sqnethttp.h" />
+    <ClInclude Include="..\include\sqnet\sqnetprotocol.h" />
+    <ClInclude Include="..\include\sqnet\sqnetservice.h" />
+    <ClInclude Include="..\include\sqnet\sqnetserviceex.h" />
+    <ClInclude Include="..\include\sqnet\sqnetservicep.h" />
+    <ClInclude Include="..\include\sqnet\sqpacketparser.h" />
+    <ClInclude Include="..\include\sqnet\sqsession.h" />
+    <ClInclude Include="..\include\sqnet\sqthreadinterface.h" />
+    <ClInclude Include="..\include\sqnet\squdp.h" />
+    <ClInclude Include="..\include\sqnet\WHttpClient.h" />
+    <ClInclude Include="..\src\sqnet\netlog.h" />
+    <ClInclude Include="..\src\sqnet\resource.h" />
+    <ClInclude Include="..\src\sqnet\sqnethelper2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\sqnet\HttpClient.cpp" />
+    <ClCompile Include="..\src\sqnet\safetudp.cpp" />
+    <ClCompile Include="..\src\sqnet\sqcenterparser.cc" />
+    <ClCompile Include="..\src\sqnet\sqcrypthelper.cc" />
+    <ClCompile Include="..\src\sqnet\sqhttp.cpp" />
+    <ClCompile Include="..\src\sqnet\sqparser.cc" />
+    <ClCompile Include="..\src\sqnet\sqnet2.cc" />
+    <ClCompile Include="..\src\sqnet\sqnet2ex.cc" />
+    <ClCompile Include="..\src\sqnet\sqnetclient.cc" />
+    <ClCompile Include="..\src\sqnet\sqnetclientbot.cc" />
+    <ClCompile Include="..\src\sqnet\sqnetclientex.cc" />
+    <ClCompile Include="..\src\sqnet\sqnetclienttt.cc" />
+    <ClCompile Include="..\src\sqnet\sqnethelper2.cc" />
+    <ClCompile Include="..\src\sqnet\sqnetservice.cc" />
+    <ClCompile Include="..\src\sqnet\sqpacketparser.cc" />
+    <ClCompile Include="..\src\sqnet\squdp.cc" />
+    <ClCompile Include="..\src\sqnet\WHttpClient.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\sqnet\sqnet.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

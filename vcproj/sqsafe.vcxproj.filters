@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\detail">
+      <UniqueIdentifier>{80a48358-0f9d-434b-903e-4a0c6104925a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\aes">
+      <UniqueIdentifier>{6fae7a31-a3b3-409a-890f-a45257cb75b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\sqsafe\minialgo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\safemodel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\crypto_aes.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\modp_aes.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\openssl_aes.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\phpAES.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\aes\aes_modes.c">
+      <Filter>Header Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\aes\aescrypt.c">
+      <Filter>Header Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\aes\aeskey.c">
+      <Filter>Header Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\aes\aestab.c">
+      <Filter>Header Files\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sqsafe\detail\aes\tablegen.c">
+      <Filter>Header Files\aes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\sqsafe\minialgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\safemodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\aes.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\aes_via_ace.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\aescpp.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\aesopt.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\aestab.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\brg_endian.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\brg_types.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sqsafe\detail\aes\rdtsc.h">
+      <Filter>Header Files\aes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

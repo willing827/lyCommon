@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e97c0b40-7837-4f68-a121-1288f502b3f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{f24351f4-f11d-4a49-a753-7a8c0ede6601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\detail">
+      <UniqueIdentifier>{76a55179-8ec7-489f-aa5b-eb62c1595fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\detail">
+      <UniqueIdentifier>{90ac7498-54ef-423c-9aac-09abaa41c1f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\sqthird\codec\sqcodec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqthird\codec\detail\modp_b64.h">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqthird\codec\detail\modp_md5.h">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqthird\codec\detail\modprc4.h">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqthird\codec\detail\sha1.h">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sqthird\codec\modp_b64_data.h">
+      <Filter>Source Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqthird\codec\detail\urlcodec.h">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sqthird\codec\unicode.h">
+      <Filter>Source Files\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqthird\codec\pbjson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\sqthird\codec\detail\adler32.h">
+      <Filter>Header Files\detail</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\sqthird\codec\sqcodec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqthird\codec\modp_b64.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqthird\codec\modp_md5.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqthird\codec\modprc4.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqthird\codec\sha1.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqthird\codec\unicode.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqthird\codec\pbjson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sqthird\codec\adler32.cpp">
+      <Filter>Source Files\detail</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
