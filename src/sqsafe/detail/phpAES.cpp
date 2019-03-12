@@ -1,5 +1,5 @@
 /***********************************************************
- * FILE NAME: aes.cpp
+ * FILE NAME: aes.cpp with php 5.6
  *
  * DESCRIPTION: this file define various functions that are used to
  * encrypt or decrypt a message using Advance Standard Encryption.
