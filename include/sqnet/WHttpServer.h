@@ -65,7 +65,12 @@ public:
 	// 回调处理目前的实现是单线程，回调处理尽量不要卡线程，会影响性能
 	void RegistCB(const std::string& uri, URICB func);
 
-	// 内部创建有线程
+	/* 
+		内部创建有线程
+		@param1 listen_port 监听指定端口
+		@param2 is_local	true 只允许本机访问
+		@param3 cert_finger_print 开启https访问时使用，需要先导入证书到系统并把证书的指纹值传入 WSSLCert.h提供导入证书的方法
+	*/
 	bool Start(unsigned short listen_port, bool is_local = true, const std::string& cert_finger_print = "");
 	void Stop();
 
